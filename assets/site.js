@@ -52,8 +52,19 @@ if (demo) {
   }
 }
 
+// Promo video: big play button, video loads only when asked
+const frame = document.querySelector('.video-frame');
+if (frame) {
+  const video = frame.querySelector('video');
+  frame.querySelector('.video-play').addEventListener('click', () => {
+    frame.classList.add('playing');
+    video.play();
+  });
+  video.addEventListener('play', () => frame.classList.add('playing'));
+}
+
 // Gentle fade-in of sections as they come into view
-const revealTargets = document.querySelectorAll('.section-head, .split > *, .heat > *, .compare-card, .steps li, .feature, .mcard, .gap, .table-scroll, .timeline, .investors > *, .patent, .business > *, .cta, .piston');
+const revealTargets = document.querySelectorAll('.section-head, .split > *, .video-frame, .gallery figure, .heat > *, .compare-card, .steps li, .feature, .mcard, .gap, .table-scroll, .timeline, .investors > *, .patent, .business > *, .cta, .piston');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
