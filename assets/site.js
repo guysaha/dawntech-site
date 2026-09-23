@@ -53,7 +53,7 @@ if (demo) {
 }
 
 // Gentle fade-in of sections as they come into view
-const revealTargets = document.querySelectorAll('.section-head, .split > *, .compare-card, .steps li, .feature, .patent, .business > *, .cta');
+const revealTargets = document.querySelectorAll('.section-head, .split > *, .heat > *, .compare-card, .steps li, .feature, .mcard, .gap, .table-scroll, .timeline, .investors > *, .patent, .business > *, .cta, .piston');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {

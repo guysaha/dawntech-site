@@ -23,7 +23,9 @@
       <nav class="nav-links" id="nav-links">
         <a href="#how">How it works</a>
         <a href="#features">Features</a>
+        <a href="#market">Market</a>
         <a href="#technology">Technology</a>
+        <a href="#investors">Investors</a>
         <a href="#faq">FAQ</a>
         <a class="btn btn-small" href="#contact">Contact us</a>
       </nav>
@@ -42,7 +44,7 @@
           <p class="lead">eShade glides across your windshield at the press of a button or from your phone, then tucks back into a slim housing before you drive. No folding, no storing, no burning-hot steering wheel.</p>
           <div class="hero-actions">
             <a class="btn" href="#see">See it in action</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#app">Get the app</a>
           </div>
           <ul class="hero-badges">
             <li>Granted patents in the US &amp; China</li>
@@ -101,10 +103,23 @@
 
     <section class="section section-tint">
       <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">The problem</p>
-          <h2>Sunshades haven't changed in decades.</h2>
+        <div class="heat">
+          <div class="heat-copy">
+            <p class="eyebrow">The problem</p>
+            <h2>A parked car turns into an oven.</h2>
+            <p>In one hour in the summer sun, the inside of a car gets far hotter than the air outside. Dashboards fade and crack, electronics suffer, and the wheel and seats become painful to touch.</p>
+            <p class="source">Surface and air temperatures after 1 hour parked in the sun on a ~38&nbsp;&deg;C day. Source: Arizona State University &amp; UC San Diego, <a href="https://today.ucsd.edu/story/hot_cars_can_hit_life_threatening_levels_in_approximately_one_hour" target="_blank" rel="noopener">Temperature, 2018</a>.</p>
+          </div>
+          <figure class="heat-chart" aria-label="Temperatures inside a car after one hour in the sun">
+            <div class="hbar" style="--v:38" title="Outside air: about 38 °C (100 °F)"><span class="hlabel">Outside air</span><span class="htrack"><span class="hfill hfill-ref"></span></span><span class="hval">38&deg;C</span></div>
+            <div class="hbar" style="--v:47" title="Cabin air: 47 °C (116 °F)"><span class="hlabel">Cabin air</span><span class="htrack"><span class="hfill h1"></span></span><span class="hval">47&deg;C</span></div>
+            <div class="hbar" style="--v:51" title="Seats: 51 °C (123 °F)"><span class="hlabel">Seats</span><span class="htrack"><span class="hfill h2"></span></span><span class="hval">51&deg;C</span></div>
+            <div class="hbar" style="--v:53" title="Steering wheel: 53 °C (127 °F)"><span class="hlabel">Steering wheel</span><span class="htrack"><span class="hfill h3"></span></span><span class="hval">53&deg;C</span></div>
+            <div class="hbar" style="--v:69" title="Dashboard: 69 °C (157 °F)"><span class="hlabel">Dashboard</span><span class="htrack"><span class="hfill h4"></span></span><span class="hval">69&deg;C</span></div>
+            <figcaption>&deg;C after one hour in the sun</figcaption>
+          </figure>
         </div>
+        <h3 class="compare-title">And the usual fix hasn't changed in decades.</h3>
         <div class="compare">
           <div class="compare-card">
             <h3>The folding shade</h3>
@@ -205,7 +220,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="app">
       <div class="wrap split split-app">
         <div class="phone" aria-hidden="true">
           <div class="phone-screen">
@@ -239,7 +254,17 @@
             <li>Weather at a glance, so you know when to shade.</li>
             <li>Tells you if something blocked the shade, and offers updates when they're ready.</li>
           </ul>
-          <p class="note">Android first, iPhone coming soon. Your data stays on your phone. <a href="eshade/privacy/">Privacy policy</a></p>
+          <div class="stores">
+            <a class="btn store" href="download/eShade-android.apk" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
+              <span><small>Download for</small>Android</span>
+            </a>
+            <span class="store store-soon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.2zM13.9 5.3c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>
+              <span><small>Coming soon for</small>iPhone</span>
+            </span>
+          </div>
+          <p class="note">Android 7.0 or newer, version 1.0.0 (25 MB). When Android asks, allow your browser to install apps. Your data stays on your phone. <a href="eshade/privacy/">Privacy policy</a></p>
         </div>
       </div>
     </section>
@@ -264,6 +289,114 @@
           </picture>
           <figcaption>The extended arm carrying the shade across the glass.</figcaption>
         </figure>
+      </div>
+      <div class="wrap">
+        <figure class="piston">
+          <svg viewBox="0 0 760 260" role="img" aria-labelledby="piston-title">
+            <title id="piston-title">Diagram: a flat metal band coiled on a motorized drum unrolls into a straight rigid arm that pulls the shade across the windshield</title>
+            <rect x="60" y="40" width="180" height="180" rx="28" class="p-housing"/>
+            <path d="M150.0 140.0 L149.3 140.1 L148.6 140.2 L147.8 140.2 L147.1 140.1 L146.3 140.0 L145.6 139.8 L144.8 139.6 L144.1 139.3 L143.4 139.0 L142.7 138.6 L142.0 138.1 L141.3 137.6 L140.7 137.1 L140.1 136.5 L139.6 135.8 L139.1 135.1 L138.6 134.4 L138.2 133.6 L137.9 132.8 L137.6 132.0 L137.3 131.1 L137.1 130.2 L137.0 129.3 L137.0 128.4 L137.0 127.4 L137.1 126.5 L137.3 125.5 L137.5 124.6 L137.8 123.7 L138.1 122.7 L138.6 121.8 L139.1 121.0 L139.7 120.1 L140.3 119.3 L141.0 118.6 L141.7 117.9 L142.6 117.2 L143.4 116.6 L144.3 116.0 L145.3 115.5 L146.3 115.1 L147.3 114.8 L148.4 114.5 L149.5 114.3 L150.6 114.2 L151.8 114.1 L152.9 114.2 L154.0 114.3 L155.2 114.5 L156.3 114.8 L157.4 115.1 L158.5 115.6 L159.6 116.1 L160.6 116.7 L161.6 117.4 L162.6 118.2 L163.5 119.0 L164.4 119.9 L165.1 120.9 L165.9 121.9 L166.5 123.0 L167.1 124.2 L167.6 125.3 L168.0 126.6 L168.3 127.8 L168.6 129.1 L168.7 130.4 L168.8 131.8 L168.7 133.1 L168.6 134.5 L168.3 135.8 L168.0 137.1 L167.6 138.4 L167.0 139.7 L166.4 141.0 L165.7 142.2 L164.9 143.4 L164.0 144.5 L163.0 145.5 L162.0 146.5 L160.9 147.4 L159.7 148.3 L158.4 149.0 L157.1 149.7 L155.7 150.3 L154.3 150.7 L152.8 151.1 L151.3 151.4 L149.8 151.6 L148.3 151.6 L146.8 151.6 L145.2 151.4 L143.7 151.2 L142.1 150.8 L140.6 150.3 L139.2 149.7 L137.7 149.0 L136.3 148.2 L135.0 147.3 L133.7 146.3 L132.5 145.2 L131.4 144.0 L130.4 142.7 L129.4 141.3 L128.5 139.9 L127.8 138.4 L127.1 136.9 L126.5 135.2 L126.1 133.6 L125.8 131.9 L125.6 130.2 L125.5 128.5 L125.5 126.7 L125.7 125.0 L126.0 123.2 L126.4 121.5 L126.9 119.8 L127.6 118.1 L128.4 116.5 L129.3 115.0 L130.3 113.4 L131.4 112.0 L132.7 110.6 L134.0 109.4 L135.4 108.2 L136.9 107.1 L138.5 106.1 L140.2 105.2 L141.9 104.5 L143.7 103.8 L145.6 103.3 L147.4 103.0 L149.4 102.7 L151.3 102.6 L153.2 102.6 L155.2 102.8 L157.1 103.1 L159.1 103.6 L160.9 104.2 L162.8 104.9 L164.6 105.7 L166.4 106.7 L168.1 107.8 L169.7 109.1 L171.2 110.4 L172.6 111.9 L173.9 113.4 L175.2 115.1 L176.3 116.9 L177.3 118.7 L178.1 120.6 L178.8 122.6 L179.4 124.6 L179.8 126.7 L180.1 128.8 L180.3 131.0 L180.3 133.1 L180.1 135.3 L179.8 137.4 L179.3 139.5 L178.7 141.6 L177.9 143.7 L177.0 145.7 L175.9 147.6 L174.7 149.5 L173.4 151.3 L171.9 152.9 L170.3 154.5 L168.6 156.0 L166.8 157.4 L164.9 158.6 L162.9 159.7 L160.8 160.7 L158.6 161.5 L156.4 162.1 L154.1 162.6 L151.8 163.0 L149.5 163.1 L147.1 163.1 L144.8 163.0 L142.4 162.7 L140.1 162.2 L137.8 161.5 L135.6 160.7 L133.4 159.7 L131.2 158.6 L129.2 157.3 L127.2 155.8 L125.4 154.3 L123.6 152.5 L122.0 150.7 L120.5 148.7 L119.1 146.7 L117.9 144.5 L116.8 142.2 L115.9 139.9 L115.2 137.5 L114.6 135.0 L114.2 132.5 L114.0 130.0 L114.0 127.4 L114.1 124.9 L114.4 122.3 L114.9 119.8 L115.6 117.3 L116.5 114.9 L117.5 112.5 L118.7 110.2 L120.1 107.9 L121.6 105.8 L123.3 103.7 L125.2 101.8 L127.1 100.0 L129.2 98.4 L131.5 96.9 L133.8 95.5 L136.2 94.4 L138.7 93.4 L141.3 92.5 L144.0 91.9 L146.7 91.4 L149.4 91.1 L152.1 91.1 L154.9 91.2 L157.7 91.5 L160.4 92.0 L163.1 92.7 L165.7 93.6 L168.3 94.7 L170.8 96.0 L173.3 97.4 L175.6 99.1 L177.8 100.8 L179.9 102.8 L181.8 104.9 L183.6 107.1 L185.3 109.5 L186.8 112.0 L188.1 114.6 L189.2 117.3 L190.1 120.0 L190.8 122.9 L191.4 125.8 L191.7 128.7 L191.8 131.6 L191.7 134.6 L191.4 137.6 L190.9 140.5 L190.2 143.4 L189.3 146.3 L188.1 149.1 L186.8 151.8 L185.3 154.4 L183.6 156.9 L181.7 159.3 L179.6 161.5 L177.4 163.7 L175.0 165.6 L172.5 167.4 L169.9 169.0 L167.1 170.5 L164.3 171.7 L161.3 172.7 L158.3 173.5 L155.2 174.1 L152.1 174.5 L148.9 174.7 L145.8 174.6 L142.6 174.4 L139.5 173.9 L136.4 173.1 L133.3 172.2 L130.3 171.0 L127.4 169.6 L124.6 168.0 L121.9 166.3 L119.3 164.3 L116.9 162.1 L114.6 159.8 L112.5 157.3 L110.5 154.6 L108.8 151.8 L107.2 148.9 L105.9 145.9 L104.7 142.8 L103.8 139.6 L103.1 136.3 L102.7 133.0 L102.4 129.6 L102.4 126.3 L102.7 122.9 L103.2 119.5 L103.9 116.2 L104.9 113.0 L106.1 109.8 L107.5 106.6 L109.2 103.6 L111.0 100.7 L113.1 98.0 L115.4 95.4 L117.8 92.9 L120.4 90.6 L123.2 88.5 L126.1 86.6 L129.2 84.9 L132.4 83.4 L135.7 82.2 L139.1 81.2 L142.5 80.4 L146.1 79.9 L149.6 79.6 L153.2 79.5 L156.7 79.8 L160.3 80.2 L163.8 81.0 L167.3 81.9 L170.7 83.2 L174.0 84.6 L177.2 86.3 L180.3 88.3 L183.3 90.4 L186.1 92.8 L188.7 95.3 L191.2 98.1 L193.4 101.0 L195.5 104.0 L197.3 107.3 L198.9 110.6 L200.3 114.1 L201.4 117.7 L202.3 121.3 L202.9 125.0 L203.3 128.7 L203.4 132.5 L203.2 136.3 L202.7 140.1 L202.0 143.8 L201.0 147.5 L199.8 151.1 L198.3 154.6 L196.5 158.0 L194.6 161.3 L192.3 164.5 L189.9 167.5 L187.2 170.3 L184.4 172.9 L181.3 175.3 L178.1 177.5 L174.7 179.5 L171.2 181.3 L167.6 182.8 L163.9 184.0 L160.0 185.0 L156.1 185.7 L152.2 186.1 L148.2 186.3 L144.3 186.1 L140.3 185.7 L136.3 185.0 L132.4 184.0 L128.6 182.8 L124.9 181.2 L121.3 179.5 L117.8 177.4 L114.4 175.1 L111.2 172.6 L108.2 169.8 L105.4 166.9 L102.8 163.7 L100.5 160.4 L98.3 156.8 L96.4 153.2 L94.8 149.4 L93.5 145.5 L92.4 141.5 L91.6 137.4 L91.1 133.2 L90.9 129.1 L91.0 124.9 L91.3 120.7 L92.0 116.6 L93.0 112.5 L94.2 108.4 L95.8 104.5 L97.6 100.7 L99.7 97.0 L102.1 93.4 L104.7 90.0 L107.5 86.8 L110.6 83.8 L113.9 81.1 L117.3 78.5 L121.0 76.2 L124.8 74.2 L128.8 72.4 L132.8 71.0 L137.0 69.8 L141.3 68.9 L145.6 68.3 L150.0 68.0" class="p-coil"/>
+            <circle cx="150" cy="130" r="9" class="p-hub"/>
+            <rect x="150" y="64" width="470" height="8" rx="3" class="p-arm"/>
+            <rect x="615" y="56" width="16" height="24" rx="4" class="p-tip"/>
+            <path d="M240 84 H623 V214 H240" class="p-shade"/>
+            <path d="M300 84 V214 M360 84 V214 M420 84 V214 M480 84 V214 M540 84 V214 M600 84 V214" class="p-fold"/>
+            <path d="M640 68 h52 m-14 -9 l14 9 -14 9" class="p-arrow"/>
+            <g class="p-text">
+              <text x="150" y="246" text-anchor="middle">Coiled band on a motorized drum</text>
+              <text x="430" y="50" text-anchor="middle">Straight, rigid arm</text>
+              <text x="430" y="238" text-anchor="middle">Reflective shade follows the arm</text>
+              <text x="700" y="96" text-anchor="middle">Extends</text>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="market">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The market</p>
+          <h2>A big, proven category. Still manual.</h2>
+          <p class="section-sub">Drivers already spend billions on sunshades every year. The windshield shades they buy are all manual, and factory-fitted electric blinds cover rear and side windows, not the windshield, and only in new premium cars.</p>
+        </div>
+        <div class="market-grid">
+          <div class="mcard">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13l2-5.5A2 2 0 016.9 6h10.2a2 2 0 011.9 1.5L21 13v5h-3v-2H6v2H3z"/><circle cx="7.5" cy="13" r="1"/><circle cx="16.5" cy="13" r="1"/></svg>
+            <strong>1.5B</strong>
+            <span>vehicles in use worldwide, every one with a windshield</span>
+            <small>OICA, 2023</small>
+          </div>
+          <div class="mcard">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l5 3V10l5 3V6l8 4v11z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg>
+            <strong>93M</strong>
+            <span>new motor vehicles produced in a single year</span>
+            <small>OICA, 2024</small>
+          </div>
+          <div class="mcard">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><rect x="5.5" y="11" width="3" height="6" rx="1"/><rect x="10.5" y="7" width="3" height="10" rx="1"/><rect x="15.5" y="4" width="3" height="13" rx="1"/></svg>
+            <strong>$2.5&ndash;8B</strong>
+            <span>estimated global car sunshade market in 2025, growing 5&ndash;7% a year</span>
+            <small>Range of industry estimates</small>
+          </div>
+          <div class="mcard mcard-accent">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+            <strong>~$1.9B</strong>
+            <span>already spent on electric sunshades, mostly factory-fitted blinds, growing ~8% a year</span>
+            <small>Dataintelo, 2025</small>
+          </div>
+        </div>
+        <div class="gap">
+          <div class="gap-col">
+            <b>Manual windshield shades</b>
+            <span>Huge volume, fit any car, but you fold and store them every time.</span>
+          </div>
+          <div class="gap-mid">
+            <span class="gap-dot"></span>
+            <b>eShade</b>
+            <span>Automatic <em>and</em> for the windshield <em>and</em> fits cars already on the road.</span>
+          </div>
+          <div class="gap-col">
+            <b>Factory electric blinds</b>
+            <span>Automatic, but rear and side windows only, and only in new premium cars.</span>
+          </div>
+        </div>
+        <p class="source">Sources: <a href="https://oica.net/" target="_blank" rel="noopener">OICA</a> vehicles in use and production statistics; car sunshade market estimates from <a href="https://dataintelo.com/report/global-car-sun-shades-market" target="_blank" rel="noopener">Dataintelo</a>, <a href="https://www.datainsightsmarket.com/reports/automotive-sunshade-778507" target="_blank" rel="noopener">Data Insights Market</a> and <a href="https://dataintelo.com/report/automotive-sunshade-market" target="_blank" rel="noopener">Dataintelo (automotive sunshade)</a>; electric sunshade estimate from <a href="https://dataintelo.com/report/automotive-electric-sunshade-market" target="_blank" rel="noopener">Dataintelo</a>. Estimates differ between research firms.</p>
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Competition</p>
+          <h2>The only one that ticks every box.</h2>
+        </div>
+        <div class="table-scroll">
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr">Feature</span></th>
+                <th scope="col" class="me"><span class="me-name"><span class="e">e</span>Shade</span></th>
+                <th scope="col">Folding shade</th>
+                <th scope="col">Umbrella shade</th>
+                <th scope="col">Manual roller shade</th>
+                <th scope="col">Factory electric blinds</th>
+                <th scope="col">Window tint</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Shades with one tap</th><td class="me y">Yes</td><td class="n">No</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td><td class="p">Always on</td></tr>
+              <tr><th scope="row">Covers the windshield</th><td class="me y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="n">No</td><td class="p">Limited by law</td></tr>
+              <tr><th scope="row">Stays installed, nothing to store</th><td class="me y">Yes</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+              <tr><th scope="row">Fits cars already on the road</th><td class="me y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="n">No</td><td class="y">Yes</td></tr>
+              <tr><th scope="row">App control, PIN and status</th><td class="me y">Yes</td><td class="n">No</td><td class="n">No</td><td class="n">No</td><td class="n">No</td><td class="n">No</td></tr>
+              <tr><th scope="row">Full view while driving</th><td class="me y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td><td class="p">Tinted</td></tr>
+              <tr><th scope="row">Brandable with your design</th><td class="me y">Yes</td><td class="y">Yes</td><td class="p">Limited</td><td class="p">Limited</td><td class="n">No</td><td class="n">No</td></tr>
+              <tr><th scope="row">Patented mechanism</th><td class="me y">Yes</td><td class="n">&ndash;</td><td class="n">&ndash;</td><td class="n">&ndash;</td><td class="n">&ndash;</td><td class="n">&ndash;</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source">Comparison with typical products in each category.</p>
       </div>
     </section>
 
@@ -300,6 +433,15 @@
             <p>Application pending</p>
           </a>
         </div>
+        <h3 class="timeline-title">From invention to launch</h3>
+        <ol class="timeline">
+          <li><b>2020</b><span>Spiral Piston invented, first patent filing</span></li>
+          <li><b>2021</b><span>International (PCT) patent application</span></li>
+          <li><b>2023</b><span>Patent granted in China</span></li>
+          <li><b>2024</b><span>Patent granted in the United States</span></li>
+          <li><b>2026</b><span>Connected product: hardware, firmware, Android app and wireless updates</span></li>
+          <li class="next"><b>Next</b><span>Market launch, iPhone app and distribution partners</span></li>
+        </ol>
       </div>
     </section>
 
@@ -316,6 +458,24 @@
           <div><b>Distributors</b><span>A new category for accessory retail and installers.</span></div>
           <a class="btn" href="mailto:support@dawntech.co.il?subject=eShade%20business%20inquiry">Talk to us</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="investors">
+      <div class="wrap investors">
+        <div>
+          <p class="eyebrow">Investors &amp; partners</p>
+          <h2>Why eShade.</h2>
+          <p>eShade takes a product every driver knows and makes it automatic, with a patented mechanism and a connected app. We're talking with investors, distributors and fleet partners about bringing it to market.</p>
+          <a class="btn btn-light" href="mailto:support@dawntech.co.il?subject=eShade%20investor%20inquiry">Request the investor deck</a>
+          <p class="note-dark">Detailed plans and figures are shared under NDA.</p>
+        </div>
+        <ul class="why">
+          <li><b>Protected</b><span>Granted patents in the US and China, the world's two largest car markets; Europe and Australia pending.</span></li>
+          <li><b>Built</b><span>A working, connected product: hardware, firmware, Android app, PIN security and wireless updates.</span></li>
+          <li><b>Big market</b><span>A multi-billion-dollar sunshade category and 1.5 billion vehicles on the road, with no automatic windshield option.</span></li>
+          <li><b>Two ways to sell</b><span>Consumers through retail and online, and businesses through fleets, rentals and dealerships, with branding on every shade.</span></li>
+        </ul>
       </div>
     </section>
 
@@ -367,8 +527,8 @@
             <p>Yes. The app remembers all your eShades, each with its own name, and connects to the one you choose.</p>
           </details>
           <details>
-            <summary>Which phones are supported?</summary>
-            <p>The eShade app runs on Android 7.0 and newer. An iPhone app is on the way.</p>
+            <summary>Where do I get the app? Which phones are supported?</summary>
+            <p>Android phones running 7.0 or newer can <a href="download/eShade-android.apk" download>download the app here</a>; when Android asks, allow your browser to install it. It will also come to Google Play. An iPhone app is coming soon.</p>
           </details>
           <details>
             <summary>How does eShade get updates?</summary>
