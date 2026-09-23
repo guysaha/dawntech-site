@@ -3,40 +3,420 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dawn Tech | eShade</title>
-  <meta name="description" content="Dawn Tech makes eShade, the smart electric sunshade for your car's windshield.">
+  <title>eShade | The electric sunshade for your car</title>
+  <meta name="description" content="eShade is the world's first electric car sunshade. It glides across your windshield at the touch of a button or from your phone. Patented in the US and China. By Dawn Tech Ltd.">
+  <meta property="og:title" content="eShade | The electric sunshade for your car">
+  <meta property="og:description" content="Shade your windshield with one tap. Patented, app-controlled, solar-charged.">
+  <meta property="og:image" content="https://dawntech.co.il/assets/img/render.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e1726">
   <link rel="icon" href="assets/eshade-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <a class="brand" href="/">Dawn Tech</a>
-    <nav><a href="eshade/privacy/">Privacy</a><a href="#contact">Contact</a></nav>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="#top" aria-label="eShade home"><span class="e">e</span>Shade</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#technology">Technology</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#contact">Contact us</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
+
   <main>
     <section class="hero">
-      <img class="logo" src="assets/eshade-logo.png" alt="eShade">
-      <h1>The smart electric sunshade for your car's windshield</h1>
-      <p>eShade opens and closes at the touch of a button or from your phone, charges from the sun, and keeps your car cool.</p>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Patented &middot; World's first electric car sunshade</p>
+          <h1>Shade your windshield with one tap.</h1>
+          <p class="lead">eShade glides across your windshield at the press of a button or from your phone, then tucks back into a slim housing before you drive. No folding, no storing, no burning-hot steering wheel.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#see">See it in action</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero-badges">
+            <li>Granted patents in the US &amp; China</li>
+            <li>Controlled from your phone</li>
+            <li>Solar charged</li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <picture>
+            <source srcset="assets/img/render-sm.webp 800w, assets/img/render.webp 1600w" type="image/webp" sizes="(max-width: 900px) 100vw, 55vw">
+            <img src="assets/img/render.jpg" srcset="assets/img/render-sm.jpg 800w, assets/img/render.jpg 1600w" sizes="(max-width: 900px) 100vw, 55vw" width="1600" height="909" alt="The eShade unit: a slim white housing with two buttons, mounted on its arm">
+          </picture>
+        </div>
+      </div>
     </section>
 
-    <div class="grid">
-      <div class="card"><h3>One tap</h3><p>Open fully, close fully, or drag it to exactly the size you want in the app.</p></div>
-      <div class="card"><h3>Solar powered</h3><p>A built-in solar panel keeps the battery charged. USB charging works too.</p></div>
-      <div class="card"><h3>Safe by design</h3><p>Won't open while the car is moving, stops by itself if something is in the way.</p></div>
-      <div class="card"><h3>Yours only</h3><p>Protect each eShade with a PIN code and manage several cars from one app.</p></div>
-    </div>
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div><strong>1 tap</strong><span>to shade or unshade</span></div>
+        <div><strong>~10 sec</strong><span>from clear glass to full shade</span></div>
+        <div><strong>Solar</strong><span>keeps the battery topped up</span></div>
+        <div><strong>2 patents</strong><span>granted, 2 more pending</span></div>
+      </div>
+    </section>
 
-    <h2 id="contact">Contact</h2>
-    <p>Questions, support or business inquiries: <a href="mailto:support@dawntech.co.il">support@dawntech.co.il</a></p>
+    <section class="section" id="see">
+      <div class="wrap split">
+        <div class="split-copy">
+          <p class="eyebrow">See it in action</p>
+          <h2>Parked in the sun? Tap Shade.</h2>
+          <p>Leaving the car? One tap and the shade glides across the glass. Coming back? Tap Unshade and it rolls away into its housing at the edge of the windshield, out of your view.</p>
+          <p class="note">Real photos of an installed eShade, not renders. Try the buttons.</p>
+        </div>
+        <div class="demo" data-state="shaded">
+          <div class="demo-frame">
+            <picture>
+              <source srcset="assets/img/unshaded.webp" type="image/webp">
+              <img class="demo-img demo-unshaded" src="assets/img/unshaded.jpg" width="1200" height="900" alt="Car windshield with eShade retracted" loading="lazy">
+            </picture>
+            <picture>
+              <source srcset="assets/img/shaded.webp" type="image/webp">
+              <img class="demo-img demo-shaded" src="assets/img/shaded.jpg" width="1200" height="900" alt="The same windshield covered by the eShade reflective shade" loading="lazy">
+            </picture>
+          </div>
+          <div class="demo-controls" role="group" aria-label="Try it">
+            <button type="button" data-set="unshaded" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Unshade
+            </button>
+            <button type="button" data-set="shaded" aria-pressed="true">
+              Shade<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="he" lang="he">
-      <h2>eShade בעברית</h2>
-      <p>eShade היא שמשונית חשמלית חכמה לשמשה הקדמית של הרכב. נפתחת ונסגרת בלחיצת כפתור או מהטלפון, נטענת מהשמש, ושומרת על הרכב קריר. לתמיכה ושאלות: <a href="mailto:support@dawntech.co.il">support@dawntech.co.il</a></p>
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The problem</p>
+          <h2>Sunshades haven't changed in decades.</h2>
+        </div>
+        <div class="compare">
+          <div class="compare-card">
+            <h3>The folding shade</h3>
+            <ul class="cross">
+              <li>Unfold, fit, remove, fold and store it. Every single time.</li>
+              <li>Ends up on the back seat instead of on the glass.</li>
+              <li>Sags, falls and wears out.</li>
+              <li>Meanwhile the dashboard fades and cracks, and the wheel and seat-belt buckle get too hot to touch.</li>
+            </ul>
+          </div>
+          <div class="compare-card compare-good">
+            <h3>eShade</h3>
+            <ul class="check">
+              <li>Install once. It stays on the windshield, ready.</li>
+              <li>Shade or unshade with one tap, from the unit or your phone.</li>
+              <li>Reflective heat and UV barrier across the glass.</li>
+              <li>Retracts into a slim side housing, nothing to store.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps. The first one you only do once.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Install once</h3>
+            <p>Attach eShade to the inside of your windshield with its silicone suction cups, adjust the three-axis mount, and set how far the shade should travel. That's it.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Tap Shade when you park</h3>
+            <p>Press the button on the unit or tap Shade in the app. The shade glides across the glass and stops at the coverage you chose.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Tap Unshade and drive</h3>
+            <p>The shade rolls back into its housing along the edge of the windshield. The app won't let it deploy while the car is moving.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Features</p>
+          <h2>Small unit. Thought through.</h2>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+            <h3>App control</h3>
+            <p>Shade, unshade, stop, or drag to exactly the coverage you want. Battery, charging and position are shown live.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <h3>Solar powered</h3>
+            <p>A built-in solar panel keeps the battery charged in everyday use. USB charging is there as a backup. No wiring to the car.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+            <h3>Safe by design</h3>
+            <p>Stops by itself if something blocks the way, won't deploy while driving, and won't start a move its battery can't finish.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="11" rx="2"/><path d="M8 10.5V7a4 4 0 018 0v3.5"/></svg>
+            <h3>Yours only</h3>
+            <p>Protect each eShade with a 4-digit PIN, so only your phones can operate it. Manage several cars from one app.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="3"/><path d="M9 10.5l-1.5 1.5L9 13.5M15 10.5l1.5 1.5-1.5 1.5"/></svg>
+            <h3>Buttons on the unit</h3>
+            <p>No phone at hand? Tap a button to go all the way, or hold it to move just as far as you like.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h3l2-6 4 12 2-6h5"/></svg>
+            <h3>Heat &amp; UV barrier</h3>
+            <p>A reflective, coated shade bounces sunlight back out and blocks UV before it reaches the dashboard and seats.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13l2-5.5A2 2 0 016.9 6h10.2a2 2 0 011.9 1.5L21 13v5h-3v-2H6v2H3z"/><circle cx="7.5" cy="13" r="1"/><circle cx="16.5" cy="13" r="1"/></svg>
+            <h3>Fits most cars</h3>
+            <p>The three-axis adjustable mount and settable travel distance are designed for a wide range of windshields.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 11-2.3-5.7"/><path d="M20 4v4.5h-4.5"/></svg>
+            <h3>Keeps improving</h3>
+            <p>Firmware updates arrive through the app over Bluetooth. The app tells you when a new version is ready.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split-app">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="app-top">
+              <span class="app-mark"><span class="e">e</span>Shade</span>
+              <span class="app-status"><i></i>Connected</span>
+            </div>
+            <div class="app-card">
+              <div><small>Battery</small><b>92%</b></div>
+              <div><small>Charging</small><b>Solar</b></div>
+              <div><small>Outside</small><b>34&deg;</b></div>
+            </div>
+            <div class="app-pct">75%</div>
+            <div class="app-slider"><span></span></div>
+            <div class="app-shade"><span class="app-fill"></span><span class="app-rail"></span></div>
+            <div class="app-buttons">
+              <span class="ab ab-light">&lsaquo;</span>
+              <span class="ab ab-stop"><i></i></span>
+              <span class="ab ab-dark">&rsaquo;</span>
+            </div>
+            <div class="app-labels"><span>Unshade</span><span>Stop</span><span>Shade</span></div>
+          </div>
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow">The eShade app</p>
+          <h2>Everything in one place.</h2>
+          <ul class="check">
+            <li>Shade, unshade and stop, or slide to any position.</li>
+            <li>Live battery, charging and device status.</li>
+            <li>Several cars, each with its own name and PIN.</li>
+            <li>Weather at a glance, so you know when to shade.</li>
+            <li>Tells you if something blocked the shade, and offers updates when they're ready.</li>
+          </ul>
+          <p class="note">Android first, iPhone coming soon. Your data stays on your phone. <a href="eshade/privacy/">Privacy policy</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="technology">
+      <div class="wrap split">
+        <div class="split-copy">
+          <p class="eyebrow">The invention</p>
+          <h2>The Spiral Piston.</h2>
+          <p>At the heart of eShade is our patented Spiral Piston. A metal band lies flat and coiled inside the compact housing. As a motorized drum turns, it unrolls into a straight, rigid arm that carries the shade across the windshield, and pulls it back again.</p>
+          <p>Long reach, tiny footprint. That's what lets a full windshield shade live in a unit the size of your hand.</p>
+          <div class="tech-points">
+            <div><b>Compact</b><span>coils flat inside the housing</span></div>
+            <div><b>Rigid</b><span>straight and stiff when extended</span></div>
+            <div><b>Electric</b><span>driven by a motorized drum</span></div>
+          </div>
+        </div>
+        <figure class="tech-img">
+          <picture>
+            <source srcset="assets/img/mechanism.webp" type="image/webp">
+            <img src="assets/img/mechanism.jpg" width="848" height="480" alt="Close-up of the eShade arm extending across a windshield" loading="lazy">
+          </picture>
+          <figcaption>The extended arm carrying the shade across the glass.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="patents">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Intellectual property</p>
+          <h2>Protected by granted patents.</h2>
+          <p class="section-sub">The eShade mechanism is covered by the patent family <em>Electric Spiraling Piston and Systems, Devices, Apparatuses and Methods Utilizing Same</em>, with priority from July 2020.</p>
+        </div>
+        <div class="patents">
+          <a class="patent" href="https://patents.google.com/patent/US12157351B2/en" target="_blank" rel="noopener">
+            <span class="tag tag-granted">Granted</span>
+            <h3>United States</h3>
+            <p class="pno">US 12,157,351 B2</p>
+            <p>Granted December 3, 2024</p>
+          </a>
+          <a class="patent" href="https://patents.google.com/patent/CN114929075B/en" target="_blank" rel="noopener">
+            <span class="tag tag-granted">Granted</span>
+            <h3>China</h3>
+            <p class="pno">CN 114929075 B</p>
+            <p>Granted August 18, 2023</p>
+          </a>
+          <a class="patent" href="https://patents.google.com/patent/EP4185161A1/en" target="_blank" rel="noopener">
+            <span class="tag">Pending</span>
+            <h3>Europe</h3>
+            <p class="pno">EP 4185161</p>
+            <p>Application pending</p>
+          </a>
+          <a class="patent" href="https://patents.google.com/patent/AU2021310850A1/en" target="_blank" rel="noopener">
+            <span class="tag">Pending</span>
+            <h3>Australia</h3>
+            <p class="pno">AU 2021310850</p>
+            <p>Application pending</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="business">
+      <div class="wrap business">
+        <div>
+          <p class="eyebrow">For business</p>
+          <h2>Your brand, on every windshield.</h2>
+          <p>The shade can be printed with any design. Rental fleets, dealerships, corporate fleets and sports teams can turn every parked car into a display for their brand, while keeping the cars cool.</p>
+        </div>
+        <div class="business-list">
+          <div><b>Fleets &amp; rentals</b><span>Cooler cars at pickup, less interior wear.</span></div>
+          <div><b>Dealerships</b><span>Protect the lot and show your brand.</span></div>
+          <div><b>Distributors</b><span>A new category for accessory retail and installers.</span></div>
+          <a class="btn" href="mailto:support@dawntech.co.il?subject=eShade%20business%20inquiry">Talk to us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions and answers.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What exactly is eShade?</summary>
+            <p>An electric sunshade for your car's windshield. It mounts on the inside of the windshield and moves a reflective shade across the glass at the touch of a button or from the app. When you're ready to drive, it retracts into a slim housing along the edge of the windshield.</p>
+          </details>
+          <details>
+            <summary>How do I control it?</summary>
+            <p>Two ways: the eShade app on your phone, over Bluetooth, or the two buttons on the unit itself. A short press moves the shade all the way; holding a button moves it only while you hold. In the app you can also stop anywhere or slide to the exact coverage you want.</p>
+          </details>
+          <details>
+            <summary>How is it powered? Does it use my car battery?</summary>
+            <p>No wiring to the car at all. eShade has its own rechargeable battery, kept charged by a built-in solar panel in everyday use. If you use it very often or park in the shade for long periods, you can top it up over USB.</p>
+          </details>
+          <details>
+            <summary>What happens when the battery runs low?</summary>
+            <p>The app shows the battery level at all times. If there isn't enough charge to finish covering the windshield, eShade won't start shading, so it never gets stuck halfway across the glass. Unshading is still allowed, so you can always clear your view.</p>
+          </details>
+          <details>
+            <summary>Can the shade open while I'm driving?</summary>
+            <p>No. The app uses your phone's location to tell when the car is moving and won't deploy the shade while you drive. When retracted, the shade sits in its housing at the edge of the windshield, out of your line of sight.</p>
+          </details>
+          <details>
+            <summary>What if something is in the way?</summary>
+            <p>eShade senses when its movement is blocked and stops by itself. The app tells you what happened so you can clear the way and try again.</p>
+          </details>
+          <details>
+            <summary>Will it fit my car?</summary>
+            <p>eShade is designed to fit most passenger cars. The mount adjusts on three axes, attaches with silicone suction cups, and you set the travel distance once for your windshield. Not sure about your model? Email us and we'll check.</p>
+          </details>
+          <details>
+            <summary>Do I need a technician to install it?</summary>
+            <p>No. Installation is a one-time job you do yourself: position the unit, adjust the mount, and set the travel distance in the app. After that it simply stays in place.</p>
+          </details>
+          <details>
+            <summary>Can someone else control my eShade?</summary>
+            <p>Not if you set a PIN. Each eShade can be protected with a 4-digit code, and only phones that know it can operate the shade. Control works over Bluetooth, so you need to be near the car anyway.</p>
+          </details>
+          <details>
+            <summary>Can I control more than one car?</summary>
+            <p>Yes. The app remembers all your eShades, each with its own name, and connects to the one you choose.</p>
+          </details>
+          <details>
+            <summary>Which phones are supported?</summary>
+            <p>The eShade app runs on Android 7.0 and newer. An iPhone app is on the way.</p>
+          </details>
+          <details>
+            <summary>How does eShade get updates?</summary>
+            <p>New firmware comes with app updates. When your eShade runs an older version, the app offers to update it over Bluetooth in a couple of minutes.</p>
+          </details>
+          <details>
+            <summary>Is the technology patented?</summary>
+            <p>Yes. The Spiral Piston mechanism is protected by granted patents in the United States (US 12,157,351 B2) and China (CN 114929075 B), with applications pending in Europe and Australia. <a href="#patents">See the patents</a>.</p>
+          </details>
+          <details>
+            <summary>Can the shade carry my company's logo?</summary>
+            <p>Yes. The shade can be printed with custom designs for fleets, dealerships, sports teams and other brands. <a href="mailto:support@dawntech.co.il?subject=eShade%20custom%20branding">Contact us</a> to discuss your project.</p>
+          </details>
+          <details>
+            <summary>When and where can I buy eShade?</summary>
+            <p>eShade is getting ready for launch. Email us and we'll let you know as soon as it's available. Distributors and fleet operators are welcome to reach out now.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Want to hear more?</h2>
+          <p>Whether you're a driver, a distributor or a fleet manager, we'd love to hear from you.</p>
+          <a class="btn btn-light" href="mailto:support@dawntech.co.il">support@dawntech.co.il</a>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
-    &copy; 2026 Dawn Tech Ltd. (דון טק בע"מ) &middot; <a href="eshade/privacy/">eShade app privacy policy</a>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="wordmark wordmark-small" href="#top"><span class="e">e</span>Shade</a>
+        <p>eShade is designed and developed by Dawn Tech Ltd., Israel.</p>
+      </div>
+      <nav>
+        <a href="#faq">FAQ</a>
+        <a href="#patents">Patents</a>
+        <a href="eshade/privacy/">Privacy policy</a>
+        <a href="mailto:support@dawntech.co.il">Contact</a>
+      </nav>
+    </div>
+    <div class="wrap footer-legal">&copy; 2026 Dawn Tech Ltd. All rights reserved.</div>
   </footer>
+
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
