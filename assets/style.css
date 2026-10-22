@@ -456,3 +456,9 @@ ul.cross li::before { background-color: rgba(93, 107, 126, .12); background-imag
 .legal h2 { font-size: 24px; margin: 40px 0 12px; }
 .legal ul { padding-left: 22px; }
 .legal li { margin-bottom: 8px; }
+
+/* Platform: other fields for the Spiral Piston */
+.platform-fields .feature { position: relative; }
+.platform-fields .tag { position: absolute; top: 24px; right: 20px; }
+.platform-close { max-width: 720px; margin: 40px 0 0; font-size: 18px; color: var(--muted); }
+.platform-close b { color: var(--ink); }
