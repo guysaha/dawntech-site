@@ -48,6 +48,7 @@ p { margin: 0 0 16px; }
 .wordmark { font-weight: 800; font-size: 26px; letter-spacing: -.03em; color: var(--ink); text-decoration: none; line-height: 1; }
 .wordmark .e, .app-mark .e { color: var(--slate); }
 .wordmark-small { font-size: 22px; }
+.wordmark .by { margin-left: 8px; font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--muted); white-space: nowrap; }
 
 /* Buttons */
 .btn {
